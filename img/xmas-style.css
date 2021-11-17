@@ -1,0 +1,276 @@
+#countdown{
+  font-size:60px;
+  font-weight:bold;
+  margin:40px 0;
+  background-color:#62b5e5;
+  border-radius:20px;
+  padding:20px 0;
+}
+.amr{
+  width:100%;
+  text-align:center;
+  font-size:20px
+}
+.amr h3{
+  font-size:39px;
+  font-weight:100
+}
+#insert-num, .other-num{
+  color:#86bc25;
+  font-weight:900;
+  font-size: 1.2em;
+}
+.progress{
+  width:100%;
+  margin: 100px 0;
+}
+.progress h3{
+  font-size: 59px;
+  text-align:center;
+  margin:40px 0;
+}
+#myProgress {
+  width: 100%;
+  background-color: #fff;
+  /* box-shadow: inset 0px 0px 21px -3px rgba(0,0,0,0.75); */
+  border-radius: 10px;
+  position: relative;
+}
+
+#myBar {
+  width: 10%;
+  height: 50px;
+  background-color: #86bc25;
+  background: url(/content/dam/html/ro/xmas2020/repeat2.png?nc=1);
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-size: 25px;
+  line-height: 50px;
+  font-weight: bold;
+  box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  position:relative;
+}
+#myProgress::after{content:'';display:block;position:absolute;top: 0;width: 100%;height: 100%;box-shadow: inset 0px 0px 21px -3px rgba(0,0,0,0.75);}
+body {
+  background-color: black;
+  color: white;
+  background: url(/content/dam/html/ro/xmas2020/bck4.png?nc=1);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.xmas-wrapper {
+  width: 100%;
+  background-repeat: repeat-y;
+  background-size: contain;
+  min-height: 2000px;
+  height: auto;
+  padding: 0 100px;
+}
+
+.xmas-wrapper h1 {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 40px;
+}
+.xmas-wrapper h2{
+  text-align:center;
+  padding-bottom:40px;
+  font-weight:normal;
+}
+.xmas-wrapper a {
+  display: block;
+  text-align: center;
+  background-color: #86bc25;
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  border: 2px solid #86bc25;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.xmas-wrapper a:hover {
+  color: #86bc25;
+  background-color: white;
+}
+
+span.green {
+  color: #86bc25;
+  font-weight: bold;
+}
+
+span.turq {
+  color: #0097A9;
+  font-weight: bold;
+}
+
+.bullet {
+  height: 75px;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.bullet .left {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  position: relative;
+  height: 100%;
+}
+
+.bullet .left img {
+  height: 100% !important;
+}
+
+.bullet .right {
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+  position: relative;
+  height: inherit;
+  padding-left: 20px;
+}
+
+.bullet .right h3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  margin: 0;
+}
+
+.bullets-wrapper {
+  padding-left: 50px;
+  margin: 50px 0;
+}
+
+.pin-images {
+  margin: 50px 0;
+}
+
+.testimonial{
+  background-color: #191919;
+  padding: 35px;
+  margin:30px 0;
+  position:relative;
+}
+
+.testimonial:before{
+  content:'';
+  position:absolute;
+  left:0;
+  top:0;
+  height: 75%;
+  z-index: 3;
+  width: 3px;
+  background: #86bc25;
+}
+
+.testimonial:after{
+  content:'';
+  position:absolute;
+  left:0;
+  top:0;
+  height: 3px;
+  z-index: 3;
+  width: 75%;
+  background: #86bc25;
+}
+.call{
+  margin:80px 0;
+}
+.call p{
+  text-align:center;
+}
+span.block{
+  display:block;
+  font-weight:bold;
+  margin-top:10px;
+  text-align:right;
+}
+.testimonial p{
+  width:84%;
+  display:inline-block;
+  vertical-align:top;
+  padding-left:30px;
+}
+.testimonial-wrapper h4{
+  font-size:30px;
+}
+.testimonial img{
+  margin-bottom:20px;
+  display: inline-block;
+  width: auto;
+}
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33%;
+  /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.column img:hover {
+  cursor: pointer;
+  opacity: 75%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.cmp-footer{
+  background-color:black;
+  color:white!important;
+  background: none;
+}
+.cmp-footer__disclaimer p{
+  color:#a4a4a4 !important;
+}
+
+.cmp-footer__links{
+  background-color: black;
+  background: none;
+}
+
+.cmp-footer__links a{
+  color:#a4a4a4 !important;
+}

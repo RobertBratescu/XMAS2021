@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+html {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  background-color: black;
+}
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  &.green {
+    color: #67bd00;
+  }
+  & .blue {
+    color: #0097a9;
+  }
+  &.light {
+    font-weight: 300;
+  }
+  &.bold {
+    font-weight: 900 !important;
+  }
+  &.nowrap {
+    white-space: nowrap;
+  }
+}
+
+.xmas-wrapper {
+  & * {
+    box-sizing: border-box;
+  }
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background-image: url('/img/bg-presents.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  & p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  & section {
+    height: auto;
+    width: 100%;
+    & .container {
+      color: white;
+      margin: 0 auto;
+      max-width: 1150px;
+      width: 100%;
+      & h1 {
+        font-size: 3.5rem;
+        margin: 0;
+        padding: 5rem 0 1rem 0;
+        text-align: center;
+      }
+      & h2 {
+        font-size: 2rem;
+        margin: 0;
+        font-weight: 300;
+        text-align: center;
+        padding-bottom: 4rem;
+      }
+    }
+  }
+  & .flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 0 2rem;
+    & svg {
+      width: 90px !important;
+      margin-right: 2rem;
+    }
+    & h5 {
+      margin: 1.3rem;
+      width: 100%;
+      font-size: 1.2rem;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      & span {
+        width: 70%;
+      }
+    }
+  }
+  & .section-2 {
+    padding: 2rem;
+  }
+  & .section-3 {
+    padding: 4rem 0;
+    text-align: center;
+    & p {
+      text-align: center;
+    }
+    & a.letter {
+      margin: 0 auto;
+      font-size: 1.8rem;
+      padding: 0.8rem 3rem;
+      background-color: #86bc25;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      display: inline-block;
+      border: 1px solid #86bc25;
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: white;
+        color: #86bc25;
+      }
+    }
+  }
+}
